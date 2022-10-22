@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: org.example.testRunners.R01_Smoke
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 175.13 s <<< FAILURE! - in org.example.testRunners.R01_Smoke
+org.example.testRunners.R01_Smoke.runScenario["user opens rss link", "F08_FollowUs | users could open followUs links"](12)  Time elapsed: 8.951 s  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at org.example.stepDefinitions.SD08_FollowUs.opens_new_tab(SD08_FollowUs.java:19)
+	at ✽."https://demo.nopcommerce.com/new-online-store-is-open" is opened in new tab(file:///C:/Users/Omar%20Alaa/IdeaProjects/Demo-NopCommerce-By-Sara-Omar/src/main/resources/features/F08_FollowUs.feature:20)
+

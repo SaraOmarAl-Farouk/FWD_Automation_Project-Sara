@@ -1,0 +1,17 @@
+org\example\pages\P05_Search.class
+org\example\stepDefinitions\SD01_Register.class
+org\example\stepDefinitions\SD05_Search.class
+org\example\stepDefinitions\SD09_WishList.class
+org\example\stepDefinitions\SD03_PasswordRecovery.class
+org\example\stepDefinitions\SD08_FollowUs.class
+org\example\testRunners\R01_Smoke.class
+org\example\pages\P06_WishList.class
+org\example\stepDefinitions\Hooks.class
+org\example\pages\P04_PasswordRecovery.class
+org\example\stepDefinitions\SD06_HoverCategories.class
+org\example\stepDefinitions\SD02_Login.class
+org\example\pages\P01_HomePage.class
+org\example\pages\P02_Register.class
+org\example\stepDefinitions\SD07_Slider.class
+org\example\pages\P03_Login.class
+org\example\stepDefinitions\SD04_Currency.class

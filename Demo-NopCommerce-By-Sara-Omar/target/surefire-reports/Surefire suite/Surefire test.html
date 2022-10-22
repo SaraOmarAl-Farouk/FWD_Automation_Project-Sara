@@ -1,0 +1,178 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Oct 22 14:10:42 EET 2022</td>
+</tr>
+<tr><td>Total time:</td><td>174 seconds (174687 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.example.testRunners.R01_Smoke.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunners.R01_Smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user opens rss link", "F08_FollowUs | users could open followUs links"</td>
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at org.example.stepDefinitions.SD08_FollowUs.opens_new_tab(SD08_FollowUs.java:19)
+	at ?.&quot;https://demo.nopcommerce.com/new-online-store-is-open&quot; is opened in new tab(file:///C:/Users/Omar%20Alaa/IdeaProjects/Demo-NopCommerce-By-Sara-Omar/src/main/resources/features/F08_FollowUs.feature:20)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1401034827", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1401034827'><pre>java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at org.example.stepDefinitions.SD08_FollowUs.opens_new_tab(SD08_FollowUs.java:19)
+	at ?.&quot;https://demo.nopcommerce.com/new-online-store-is-open&quot; is opened in new tab(file:///C:/Users/Omar%20Alaa/IdeaProjects/Demo-NopCommerce-By-Sara-Omar/src/main/resources/features/F08_FollowUs.feature:20)
+</pre></div></td>
+<td>8</td>
+<td>org.example.testRunners.R01_Smoke@612679d6</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.example.testRunners.R01_Smoke.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunners.R01_Smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Logged User could switch between currencies", "F04_Currency | user could switch between currencies US-Euro"</td>
+<td></td>
+<td>31</td>
+<td>org.example.testRunners.R01_Smoke@612679d6</td></tr>
+<tr>
+<td title='org.example.testRunners.R01_Smoke.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunners.R01_Smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user search using SKU", "F05_Search | users will be able to search for products with different parameters"</td>
+<td></td>
+<td>7</td>
+<td>org.example.testRunners.R01_Smoke@612679d6</td></tr>
+<tr>
+<td title='org.example.testRunners.R01_Smoke.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunners.R01_Smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "added items are displayed on wishlist", "F08_WishList  |  guest user could add products to wishlist"</td>
+<td></td>
+<td>12</td>
+<td>org.example.testRunners.R01_Smoke@612679d6</td></tr>
+<tr>
+<td title='org.example.testRunners.R01_Smoke.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunners.R01_Smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User could reset the password successfully", "F03_PasswordRecovery | User could reset password successfully"</td>
+<td></td>
+<td>8</td>
+<td>org.example.testRunners.R01_Smoke@612679d6</td></tr>
+<tr>
+<td title='org.example.testRunners.R01_Smoke.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunners.R01_Smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could hover categories", "F06_HoverCategories  |  user could hover categories and select sub category"</td>
+<td></td>
+<td>9</td>
+<td>org.example.testRunners.R01_Smoke@612679d6</td></tr>
+<tr>
+<td title='org.example.testRunners.R01_Smoke.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunners.R01_Smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user opens facebook link", "F08_FollowUs | users could open followUs links"</td>
+<td></td>
+<td>8</td>
+<td>org.example.testRunners.R01_Smoke@612679d6</td></tr>
+<tr>
+<td title='org.example.testRunners.R01_Smoke.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunners.R01_Smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user search using invalid product name", "F05_Search | users will be able to search for products with different parameters"</td>
+<td></td>
+<td>7</td>
+<td>org.example.testRunners.R01_Smoke@612679d6</td></tr>
+<tr>
+<td title='org.example.testRunners.R01_Smoke.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunners.R01_Smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could search using product name", "F05_Search | users will be able to search for products with different parameters"</td>
+<td></td>
+<td>8</td>
+<td>org.example.testRunners.R01_Smoke@612679d6</td></tr>
+<tr>
+<td title='org.example.testRunners.R01_Smoke.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunners.R01_Smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user login with valid data", "F02_Login | user should be able to login to the system"</td>
+<td></td>
+<td>10</td>
+<td>org.example.testRunners.R01_Smoke@612679d6</td></tr>
+<tr>
+<td title='org.example.testRunners.R01_Smoke.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunners.R01_Smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user login with invalid data", "F02_Login | user should be able to login to the system"</td>
+<td></td>
+<td>9</td>
+<td>org.example.testRunners.R01_Smoke@612679d6</td></tr>
+<tr>
+<td title='org.example.testRunners.R01_Smoke.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunners.R01_Smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "success message is visible after adding item to wishlist", "F08_WishList  |  guest user could add products to wishlist"</td>
+<td></td>
+<td>10</td>
+<td>org.example.testRunners.R01_Smoke@612679d6</td></tr>
+<tr>
+<td title='org.example.testRunners.R01_Smoke.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunners.R01_Smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "number of wishlist items in home page is increased", "F08_WishList  |  guest user could add products to wishlist"</td>
+<td></td>
+<td>9</td>
+<td>org.example.testRunners.R01_Smoke@612679d6</td></tr>
+<tr>
+<td title='org.example.testRunners.R01_Smoke.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunners.R01_Smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user opens youtube link", "F08_FollowUs | users could open followUs links"</td>
+<td></td>
+<td>9</td>
+<td>org.example.testRunners.R01_Smoke@612679d6</td></tr>
+<tr>
+<td title='org.example.testRunners.R01_Smoke.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunners.R01_Smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "guest user could register with valid data successfully", "F01_Register | users could register with new accounts"</td>
+<td></td>
+<td>12</td>
+<td>org.example.testRunners.R01_Smoke@612679d6</td></tr>
+<tr>
+<td title='org.example.testRunners.R01_Smoke.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunners.R01_Smoke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user opens twitter link", "F08_FollowUs | users could open followUs links"</td>
+<td></td>
+<td>8</td>
+<td>org.example.testRunners.R01_Smoke@612679d6</td></tr>
+</table><p>
+</body>
+</html>
